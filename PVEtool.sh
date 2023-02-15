@@ -34,7 +34,7 @@ pve_change_source(){
 
 #更换debian源默认USTC源
 debian_change_source(){
-mv /etc/apt/sources.list /etc/apt/sources.list.bk
+  mv /etc/apt/sources.list /etc/apt/sources.list.bk
 cat > '/etc/apt/sources.list' << EOF
 deb http://mirrors.ustc.edu.cn/debian stable main contrib non-free
 # deb-src http://mirrors.ustc.edu.cn/debian stable main contrib non-free
@@ -47,3 +47,4 @@ EOF
   green "运行完成"
 	back2menu
 }
+
